@@ -19,7 +19,7 @@ pipeline {
         }
         stage('Testing'){
             steps {
-                sh 'mvn surefire:test'
+                sh 'mvn -Dtest=NewTest'
             }
         }        
      }
