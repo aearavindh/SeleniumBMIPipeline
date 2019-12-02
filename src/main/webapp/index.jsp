@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>BMI Calculator</title>
+<title>My BMI Calculator</title>
 </head>
 <body>
 <center><h2>BMI Calculator</h2>
