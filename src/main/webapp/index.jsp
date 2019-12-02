@@ -4,10 +4,10 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>My BMI Calculator</title>
+<title>BMI Calculator</title>
 </head>
 <body>
-<center><h2>BMI Calculator</h2>
+<center><h2>My BMI Calculator</h2>
 <form action = "BMIServlet" method="post">
 <h4><label>Enter your weight: </label></h4>
 <input type = "text" name = "weight"/><br>
