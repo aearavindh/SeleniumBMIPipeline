@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Compile-Build') {
             steps {
-                sh 'mvn package -DskipTests'
+                sh 'mvn clean package -DskipTests'
             }
         }
         stage('Deployment to Tomcat'){
@@ -19,7 +19,7 @@ pipeline {
         }
         stage('Testing'){
             steps {
-                sh 'mvn test-compile'
+                sh 'mvn test'
             }
         }        
      }
