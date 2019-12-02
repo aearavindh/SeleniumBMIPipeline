@@ -2,7 +2,7 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class BMITest {
+public class BMITest extends BMIServlet {
 
 	@Test
 	public void test() {
