@@ -4,9 +4,9 @@ pipeline {
         maven "Maven"   
     }
     stages {
-        stage('Compile-Build-Test ') {
+        stage('Compile-Build') {
             steps {
-                sh 'mvn clean package'
+                sh 'mvn package -DskipTests'
             }
         }
         stage('Deployment to Tomcat'){
@@ -17,7 +17,11 @@ pipeline {
                 }
             }
         }
-        
+        stage('Testing'){
+            steps {
+                sh 'mvn test'
+            }
+        }        
      }
               
 
