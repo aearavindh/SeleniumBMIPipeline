@@ -12,7 +12,7 @@ public class NewTest {
        opt.addArguments("--headless");
        opt.addArguments("window-size=1920x1080");
        WebDriver driver = new ChromeDriver(opt);
-       driver.get("http://3.134.101.222:8080/BMI/");
+       driver.get("http://52.14.134.71:8080/BMI/");
        Thread.sleep(1000);
        driver.findElement(By.name("weight")).sendKeys("80.0"); 
        Thread.sleep(1000);
